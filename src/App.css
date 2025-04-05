@@ -1,0 +1,40 @@
+App.css
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* App.css */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.main-content section {
+  min-height: 100vh;
+  padding: 2rem 0;
+  scroll-snap-align: start;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+:root {
+  --bg-primary: #0f172a;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-accent: #8E54E9;
+}
