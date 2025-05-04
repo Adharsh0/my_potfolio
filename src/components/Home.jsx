@@ -70,20 +70,7 @@ const Home = ({ scrollToSection, projectsRef, contactRef }) => {
             />
             <span className="cursor"></span>
           </h2>
-          
-          {/* <p className="description">
-            I transform ideas into <span className="highlight">exceptional digital experiences</span> through 
-            clean code and creative design. Specializing in building modern, 
-            responsive web applications with cutting-edge technologies.
-          </p> */}
-          
-          {/* <div className="tech-stack">
-            <span className="tech-badge">React</span>
-            <span className="tech-badge">JavaScript</span>
-            <span className="tech-badge">CSS3</span>
-            <span className="tech-badge">HTML5</span>
-            <span className="tech-badge">Tailwind</span>
-          </div> */}
+         
           
           <div className="cta-buttons">
             <button 
@@ -103,7 +90,7 @@ const Home = ({ scrollToSection, projectsRef, contactRef }) => {
           
           <div className="social-links">
             <motion.a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/Adharsh0" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="GitHub"
@@ -112,7 +99,7 @@ const Home = ({ scrollToSection, projectsRef, contactRef }) => {
               <i className="fab fa-github"></i>
             </motion.a>
             <motion.a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://bit.ly/mylinkedlin" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="LinkedIn"
@@ -121,13 +108,13 @@ const Home = ({ scrollToSection, projectsRef, contactRef }) => {
               <i className="fab fa-linkedin"></i>
             </motion.a>
             <motion.a 
-              href="https://twitter.com/yourusername" 
+              href="{'https://www.instagram.com/__.adharsh.____?igsh=ZzRjcGMzOXFkZGFk' }" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Twitter"
               whileHover={{ y: -5, scale: 1.1 }}
             >
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
             </motion.a>
           </div>
         </motion.div>
@@ -159,7 +146,7 @@ const Home = ({ scrollToSection, projectsRef, contactRef }) => {
               <span className="card-text">Years Experience</span>
             </div>
             <div className="floating-card card-projects">
-              <span className="card-number">15+</span>
+              <span className="card-number">5+</span>
               <span className="card-text">Projects</span>
             </div>
           </div>

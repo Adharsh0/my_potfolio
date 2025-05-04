@@ -5,50 +5,60 @@ import "./Projects.css";
 const projectsData = [
   {
     id: 1,
-    title: "E-commerce Website",
-    category: "Web Development",
-    image: "/1.PNG",
-    description: "A fully responsive e-commerce platform built with React and Node.js.",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "Speech to Indian Sign Language Translator",
+    category: "Web Application",
+    image: "isl.PNG",
+    description: "",
+    tags: ["Flask", "JavaScript", "Three.js", "Speech Recognition"],
     link: "#"
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    category: "Web Design",
-    image: "/project2.jpg",
-    description: "A personal portfolio website showcasing skills and projects.",
-    tags: ["React", "GSAP", "Framer Motion"],
+    title: "CHD Risk Prediction",
+    category: "Data Science Web App",
+    image: "datascience.PNG",
+    description: "",
+    tags: ["Flask", "Logistic Regression", "Plotly", "Pandas"],
     link: "#"
   },
   {
     id: 3,
-    title: "Task Management App",
-    category: "App Development",
-    image: "/project3.jpg",
-    description: "A task management application with drag-and-drop functionality.",
-    tags: ["React Native", "Firebase"],
+    title: "Online Retail Recommendation System",
+    category: "Machine Learning",
+    image: "https://tse2.mm.bing.net/th?id=OIP.DJggKC_ADxbmI5ozw8QYdQHaDj&pid=Api&P=0&h=180",
+    description: "",
+    tags: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
     link: "#"
   },
   {
     id: 4,
-    title: "Recipe Finder",
-    category: "Web Development",
-    image: "/project4.jpg",
-    description: "A web application to find recipes based on available ingredients.",
-    tags: ["Next.js", "Tailwind CSS", "Spoonacular API"],
+    title: "JARVIS Voice Assistant",
+    category: "AI Assistant",
+    image: "jarvis.PNG",
+    description: "",
+    tags: ["Flask", "JavaScript", "Speech Recognition", "pyttsx3"],
     link: "#"
   },
   {
     id: 5,
-    title: "Fitness Tracker",
-    category: "App Development",
-    image: "/project5.jpg",
-    description: "An app that helps users track workouts and diet plans.",
-    tags: ["Flutter", "Firebase"],
+    title: "Zenith Events",
+    category: "MERN Stack Development",
+    image: "2.PNG",
+    description: "A fully responsive event booking platform built with React and Node.js.",
+    tags: ["React", "Node.js", "MongoDB"],
     link: "#"
   },
+  {
+    id: 6,
+    title: "Portfolio Website",
+    category: "Web Design",
+    image: "protfolio-image.PNG",
+    description: "A personal portfolio website showcasing projects, skills, and contact info with smooth animations.",
+    tags: ["React", "Framer Motion", "CSS"],
+    link: "#"
+  }
 ];
+
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -219,20 +229,7 @@ const Projects = () => {
                             </motion.span>
                           ))}
                         </div>
-                        <motion.a
-                          href={project.link}
-                          className="view-button"
-                          whileHover={{ 
-                            backgroundColor: "rgba(250, 204, 21, 0.1)", 
-                            y: -2,
-                          }}
-                          whileTap={{ scale: 0.98 }}
-                        >
-                          View Project
-                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                          </svg>
-                        </motion.a>
+                       
                       </motion.div>
                     )}
                   </div>

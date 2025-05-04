@@ -262,17 +262,17 @@ const Contact = () => {
                   {
                     icon: 'fas fa-map-marker-alt',
                     title: 'Location',
-                    text: 'Bangalore, India'
+                    text: 'Trivadrum, India'
                   },
                   {
                     icon: 'fas fa-envelope',
                     title: 'Email',
-                    text: 'adharsh@example.com'
+                    text: 'adarshudayakumar30@gmail.com'
                   },
                   {
                     icon: 'fas fa-phone',
                     title: 'Phone',
-                    text: '+91 123 456 7890'
+                    text: '+91 7907605167'
                   }
                 ].map((item, i) => (
                   <motion.div 
@@ -306,10 +306,9 @@ const Contact = () => {
                 custom={4}
               >
                 {[
-                  { icon: 'fab fa-github', url: 'https://github.com/yourusername' },
-                  { icon: 'fab fa-linkedin', url: 'https://linkedin.com/in/yourusername' },
-                  { icon: 'fab fa-twitter', url: 'https://twitter.com/yourusername' },
-                  { icon: 'fab fa-instagram', url: 'https://instagram.com/yourusername' }
+                  { icon: 'fab fa-github', url: 'https://github.com/Adharsh0' },
+                  { icon: 'fab fa-linkedin', url: 'https://bit.ly/mylinkedlin' },
+                  { icon: 'fab fa-instagram', url: 'https://www.instagram.com/__.adharsh.____?igsh=ZzRjcGMzOXFkZGFk' }
                 ].map((social, i) => (
                   <motion.a 
                     key={i}

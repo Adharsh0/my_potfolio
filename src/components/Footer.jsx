@@ -30,10 +30,9 @@ const Footer = ({ scrollToSection, refs }) => {
           </p>
           <div className="social-links">
             {[
-              { href: "https://github.com/yourusername", icon: "fab fa-github", label: "GitHub" },
-              { href: "https://linkedin.com/in/yourusername", icon: "fab fa-linkedin", label: "LinkedIn" },
-              { href: "https://twitter.com/yourusername", icon: "fab fa-twitter", label: "Twitter" },
-              { href: "https://instagram.com/yourusername", icon: "fab fa-instagram", label: "Instagram" }
+              { href: "https://github.com/Adharsh0", icon: "fab fa-github", label: "GitHub" },
+              { href: "https://bit.ly/mylinkedlin", icon: "fab fa-linkedin", label: "LinkedIn" },
+              { href: "https://www.instagram.com/__.adharsh.____?igsh=ZzRjcGMzOXFkZGFk", icon: "fab fa-instagram", label: "Instagram" }
             ].map((social, index) => (
               <motion.a
                 key={index}
@@ -100,7 +99,7 @@ const Footer = ({ scrollToSection, refs }) => {
               <div className="contact-icon">
                 <i className="fas fa-map-marker-alt"></i>
               </div>
-              <span>City, Country</span>
+              <span>Trivadrum, India</span>
             </motion.div>
             <motion.div 
               className="contact-item"
@@ -110,7 +109,7 @@ const Footer = ({ scrollToSection, refs }) => {
               <div className="contact-icon">
                 <i className="fas fa-envelope"></i>
               </div>
-              <span>adharsh@example.com</span>
+              <span>adarshudayakumar30@gmail.com</span>
             </motion.div>
             <motion.div 
               className="contact-item"
@@ -120,7 +119,7 @@ const Footer = ({ scrollToSection, refs }) => {
               <div className="contact-icon">
                 <i className="fas fa-phone"></i>
               </div>
-              <span>+1 234 567 890</span>
+              <span>+91 79 07 60 51 67</span>
             </motion.div>
           </div>
         </motion.div>

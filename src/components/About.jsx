@@ -350,8 +350,8 @@ const About = ({ scrollToSection, contactRef }) => {
                 >
                   {[
                     { title: "Name:", value: "Adharsh Udayakumar", icon: "👤" },
-                    { title: "Email:", value: "adharsh@example.com", icon: "✉️" },
-                    { title: "Location:", value: "Bangalore, India", icon: "📍" },
+                    { title: "Email:", value: "adarshudayakumar30@gmail.com", icon: "✉️" },
+                    { title: "Location:", value: "Trivadrum, India", icon: "📍" },
                     { title: "Availability:", value: "Open for Work", icon: "✅" }
                   ].map((item, index) => (
                     <motion.div 
@@ -390,7 +390,7 @@ const About = ({ scrollToSection, contactRef }) => {
                 <div className="tech-stack">
                   {[
                     "React", "JavaScript", "Node.js", "MongoDB", "Express", 
-                    "TypeScript", "Redux", "HTML5", "CSS3", "Git"
+                    "Wordpress", "HTML", "CSS", "Git"
                   ].map((tech, index) => (
                     <motion.span 
                       key={tech}
