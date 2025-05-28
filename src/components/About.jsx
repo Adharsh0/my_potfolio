@@ -351,7 +351,7 @@ const About = ({ scrollToSection, contactRef }) => {
                   {[
                     { title: "Name:", value: "Adharsh Udayakumar", icon: "👤" },
                     { title: "Email:", value: "adarshudayakumar30@gmail.com", icon: "✉️" },
-                    { title: "Location:", value: "Trivadrum, India", icon: "📍" },
+                    { title: "Location:", value: "Trivandrum, India", icon: "📍" },
                     { title: "Availability:", value: "Open for Work", icon: "✅" }
                   ].map((item, index) => (
                     <motion.div 

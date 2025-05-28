@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const Contact = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   // Refs for scroll animations
   const contactRef = useRef(null);
@@ -171,8 +173,26 @@ const Contact = () => {
     
     if (validateForm()) {
       setIsSubmitting(true);
+      setSubmitError('');
       
-      setTimeout(() => {
+      // Prepare the template parameters for EmailJS
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Adharsh'
+      };
+
+      // Send the email using EmailJS
+      emailjs.send(
+        'service_v7yxncf', // Your EmailJS service ID
+        'template_8ggh0o7', // Your EmailJS template ID
+        templateParams,
+        '6W6q0q44srJqVQkxS' // Your EmailJS user ID (public key)
+      )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
         setIsSubmitting(false);
         setSubmitSuccess(true);
         setFormData({
@@ -182,10 +202,16 @@ const Contact = () => {
           message: ''
         });
         
+        // Hide success message after 5 seconds
         setTimeout(() => {
           setSubmitSuccess(false);
         }, 5000);
-      }, 1500);
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        setIsSubmitting(false);
+        setSubmitError('Failed to send message. Please try again later.');
+      });
     }
   };
 
@@ -348,6 +374,18 @@ const Contact = () => {
                   >
                     <i className="fas fa-check-circle"></i>
                     Message sent successfully! I'll get back to you soon.
+                  </motion.div>
+                )}
+                
+                {submitError && (
+                  <motion.div 
+                    className="error-message"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <i className="fas fa-exclamation-circle"></i>
+                    {submitError}
                   </motion.div>
                 )}
                 
